@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="ramonivandy.faktaunik.FaktaUnikActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-19dp" />
+
+    <TextView
+        android:id="@+id/judulText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guideline"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/guideline"
+        android:layout_toRightOf="@+id/guideline"
+        android:text="Testing Judul"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/nextFaktaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/guideline"
+        android:layout_toRightOf="@+id/guideline"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Next Fact !" />
+
+    <TextView
+        android:id="@+id/faktaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Satu ditambah Satu sama dengan Tiga"
+        android:textAlignment="center"
+        android:textSize="26sp" />
+
+</android.widget.RelativeLayout>
